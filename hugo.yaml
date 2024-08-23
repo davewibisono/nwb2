@@ -1,0 +1,17 @@
+baseURL: "https://amazing-cendol-3cab99.netlify.app/"
+languageCode: "en"
+title: "NWB"
+
+paginate: 6
+
+# Markup 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Modules
+module:
+  mounts:
+    - source: "assets"
+      target: "assets"
