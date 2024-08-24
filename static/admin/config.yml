@@ -956,4 +956,4 @@ collections:
         fields:
           - label: "Title"
             name: "title"
-            widget: "string"
+            widget: "text"
