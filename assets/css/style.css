@@ -254,6 +254,12 @@
   --inter-900: 900;
 }
 
+.inter {
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-variation-settings: "slnt" 0 !important;
+}
+
 .inter-400 {
   font-family: "Inter", sans-serif !important;
   font-optical-sizing: auto !important;

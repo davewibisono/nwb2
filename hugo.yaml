@@ -15,3 +15,10 @@ module:
   mounts:
     - source: "assets"
       target: "assets"
+
+params: 
+  socials:
+    twitter: https://twitter.com/
+    facebook: https://facebook.com/
+    linkedin: https://linkedin.com/
+    email: https://mail.google.com/
