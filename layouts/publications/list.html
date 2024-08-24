@@ -79,13 +79,21 @@
                                     <div>
                                         <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
                                         {{ with .Params.subtitle }}
-                                        <p class="inter-400 text-12 dark-700 mt-2">{{ . }}</p>
+                                        <p class="inter-400 text-12 dark-700 mt-2">
+                                            {{ range $i, $p := . }}
+                                            {{ if eq $i 0 }}
+                                            <span>{{ $p }}</span>
+                                            {{ else }}
+                                            <span>and {{ $p }}</span>
+                                            {{ end }}
+                                            {{ end }}
+                                        </p>
                                         {{ end }}
                                     </div>
                                 </div>
-                                {{ with .Params.image }}
+                                {{ with .image }}
                                 <div class="ms-4 mb-3">
-                                    <img src="{{ site.BaseURL }}{{ . }}" alt="" class="listImg">
+                                    <img src="{{ . }}" alt="" class="listImg">
                                 </div>
                                 {{ end }}
                                 {{ end }}
