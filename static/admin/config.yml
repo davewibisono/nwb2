@@ -949,21 +949,23 @@ collections:
                     widget: "markdown"
 
 
-      - label: "Privacy Policy"
-        name: "privacy-policy"
+      - name: "privacy-policy"
+        label: "Privacy Policy"
         file: "content/privacy-policy/_index.md"
+        create: true
         fields:
           - label: "Title"
             name: "title"
             widget: "string"
-
-          - label: "Sections"
+      
+          - label: "Section"
             name: "section"
             widget: "list"
             fields:
               - label: "Title"
                 name: "title"
                 widget: "string"
+          
               - label: "List"
                 name: "list"
                 widget: "list"
@@ -972,6 +974,7 @@ collections:
                     name: "subtitle"
                     widget: "string"
                     required: false
+              
                   - label: "Items"
                     name: "items"
                     widget: "list"
@@ -979,12 +982,16 @@ collections:
                       - label: "Heading"
                         name: "heading"
                         widget: "string"
+                  
                       - label: "Icon"
                         name: "icon"
                         widget: "image"
+                  
                       - label: "Content"
                         name: "content"
                         widget: "markdown"
+                        required: false
+
                       - label: "Nested List"
                         name: "nested_list"
                         widget: "list"
@@ -993,9 +1000,12 @@ collections:
                           - label: "Heading"
                             name: "heading"
                             widget: "string"
+                      
                           - label: "Icon"
                             name: "icon"
                             widget: "image"
+                      
                           - label: "Content"
                             name: "content"
                             widget: "markdown"
+                            required: false
