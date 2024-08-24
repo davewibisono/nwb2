@@ -4,4 +4,8 @@ weight: 7
 date: "2019-10-31"
 subtitle: "Efficient, standardized mechanisms for storing, analyzing, and sharing data enable brain research worldwide, accelerating the"
 image: "/images/news/neurodata.png"
+author: "Oliver Ruebel"
+tags: 
+    - announcement
+    - newbletter
 ---

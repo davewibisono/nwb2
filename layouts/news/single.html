@@ -29,42 +29,79 @@
             </div>
         </div>
         <div class="row justify-content-between g-5">
-            <div class="col-lg-8">
+            <div class="col-lg-8 px-0">
                 <div>
                     <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
                         style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
                 </div>
                 <div class="mt-4 bg-white px-5 py-2">
-                    <div class="d-flex gap-5">
+                    <div class="d-flex flex-column flex-sm-row gap-3">
                         <div class="d-flex gap-2 align-items-center">
+                            {{ with .Date }}
                             <img src="/images/events/schedule.png" alt="" width="14">
-                            <span class="inter-400 text-14 dark-500">{{ .Date | time.Format ":date_long" }}</span>
+                            <span class="inter-400 text-14 dark-500">{{ . | time.Format ":date_long" }}</span>
+                            {{ end }}
                         </div>
                         <div>
+                            {{ with .Params.author }}
                             <img src="/images/user-dark.svg" alt="" width="14">
-                            <span class="inter-400 text-14 dark-500">{{ .Params.author | markdownify }}</span>
+                            <span class="inter-400 text-14 dark-500">{{ . }}</span>
+                            {{ end }}
                         </div>
                         <div>
-                            <img src="/images/folder.svg" alt="" width="14">
                             {{ with .Params.tags }}
+                            <img src="/images/folder.svg" alt="" width="14">
                             <span class="inter-400 text-14 dark-500">
                                 {{ delimit . ", " }}
                             </span>
-                            {{ end }}
                         </div>
+                        {{ end }}
                     </div>
                     <div class="inter dark-500 mt-4">
                         {{ .Content }}
                     </div>
-                    <div class="mt-4">
+                    <div class="mt-4 ">
                         <div class="border-bottom">
                             <p class="inter-700 dark-700 text-20 mb-1">Share</p>
                         </div>
-                        <div class="mt-4">
-                            <a class="btn btn-primary btn-lg border-0" style="background-color: #55acee;" target="_blank" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | safeURL }}" role="button"><i class="bi bi-twitter me-2"></i>Twitter</a>
-                            <a class="btn btn-primary btn-lg border-0" style="background-color: #1b84d4;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}" role="button"><i class="bi bi-facebook me-2"></i>Facebook</a>
-                            <a class="btn btn-primary btn-lg border-0" style="background-color: #066cb9;" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | safeURL }}&title={{ .Title | urlquery }}" role="button"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
-                            <a class="btn btn-primary btn-lg border-0 bg-secondary" target="_blank" href="mailto:?subject={{ .Title | urlquery }}&body=Check out this article: {{ .Permalink | safeURL }}" role="button"><i class="bi bi-envelope me-2"></i>Email</a>
+                        <div class="mt-4 pb-5 d-flex flex-wrap gap-3">
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #55acee;" target="_blank" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | safeURL }}" role="button"><i class="bi bi-twitter me-2"></i>Twitter</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #1b84d4;" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | safeURL }}" role="button"><i class="bi bi-facebook me-2"></i>Facebook</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0" style="background-color: #066cb9;" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | safeURL }}&title={{ .Title | urlquery }}" role="button"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-primary btn-lg border-0 bg-secondary" target="_blank" href="mailto:?subject={{ .Title | urlquery }}&body=Check out this article: {{ .Permalink | safeURL }}" role="button"><i class="bi bi-envelope me-2"></i>Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-5 shadow">
+                    {{ with .Params.author }}
+                    <div class="p-3 bg-slate border">
+                        <div class="d-flex flex-wrap gap-3">
+                            <div style="width: 100px;">
+                                <img src="/images/placeholder.png" alt="" class="img-fluid">
+                            </div>
+                            <p class="mb-0 blue inter-600 text-20">{{ . }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                    <div class="mt-4">
+                        <div class="border-bottom">
+                            <p class="inter-700 dark-700 text-20 mb-1">Related Posts</p>
+                        </div>
+                        <div class="mt-4 row justify-content-between gy-4">
+                            {{ range first 3 (where .Site.RegularPages ".Params.author" .Params.author) }}
+                            <a href="{{ .Permalink }}" class="col-sm-6 col-md-4" style="text-decoration: none;">
+                                <h2 class="inter-700 dark-900 text-20 underline-hover">{{ .Title }}</h2>
+                                <p class="inter-400 dark-700 mb-0">{{ .Params.subtitle | truncate 70 }}</p>
+                            </a>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
