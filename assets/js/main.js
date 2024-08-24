@@ -34,23 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Header Background Change On Scroll
-  if (header) {
-    window.addEventListener("scroll", function () {
-      let heroBottom = Array.from(hero).reduce((minBottom, hero) => {
-        return Math.min(minBottom, hero.getBoundingClientRect().bottom);
-      }, Number.POSITIVE_INFINITY);
-
-      if (header.getBoundingClientRect().top <= heroBottom) {
-        header.classList.add("bg-main-neo");
-        header.classList.remove("bg-main");
-      } else {
-        header.classList.add("bg-main");
-        header.classList.remove("bg-main-neo");
-      }
-    });
-  } else {
-    console.error('Element with class "header" not found.');
-  }
+  window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+      header.classList.add("bg-main");
+      header.classList.remove("bg-main-neo");
+    } else {
+      header.classList.remove("bg-main");
+      header.classList.add("bg-main-neo");
+    }
+  });
+  
+  
 
   // Swiper Init
   const heroSwiper = new Swiper(".heroSwiper", {
