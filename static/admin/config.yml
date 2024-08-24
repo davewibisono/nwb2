@@ -952,6 +952,8 @@ collections:
       - name: "privacy-policy"
         label: "Privacy Policy"
         file: "content/privacy-policy/_index.md"
+        media_folder: static/images/policies-overview
+        public_folder: static/images/policies-overview
         create: true
         fields:
           - label: "Title"
