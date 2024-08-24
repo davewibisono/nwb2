@@ -949,8 +949,8 @@ collections:
                     widget: "markdown"
 
 
-      - name: "privacy-policy"
-        label: "Privacy Policy"
+      - name: "policies-overview"
+        label: "Policies Overview"
         file: "content/privacy-policy/_index.md"
         create: true
         fields:
