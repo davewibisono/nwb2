@@ -19,7 +19,10 @@ collections:
       - { label: 'Content', name: 'body', widget: 'markdown' }
       - { label: 'Order', name: 'weight', widget: 'number' }
       - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Tags', name: 'tags', widget: 'list', field: { label: 'Tag', name: 'tag', widget: 'string' } }
+      - { label: 'Tags', name: 'tags', widget: 'list', fields: [
+          { label: 'Tag', name: 'tag', widget: 'string' }
+        ]
+        }
 
 
   - name: 'publications'
