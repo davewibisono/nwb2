@@ -53,7 +53,7 @@ portfolio_section:
     toward breaking down the barriers to data sharing in neuroscience
   logos:
     - logo: /images/portfolio-logo.png
-    - logo: /images/publications/incf.png
+    - logo: /images/incf.png
 news_section:
   enable: true
   btn_text: See All New
