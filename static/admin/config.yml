@@ -18,6 +18,8 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
       - { label: 'Order', name: 'weight', widget: 'number' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', allow_add: true, field: { widget: 'string' } }
 
 
   - name: 'publications'
