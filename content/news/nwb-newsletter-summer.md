@@ -5,7 +5,5 @@ date: "2022-02-09"
 subtitle: "The Neurodata Without Borders Winter 2022 Newsletter is now available!"
 image: "/images/news/winter-2022.png"
 author: "Oliver Ruebel"
-tags: 
-    - tag: announcement
-    - tag: newbletter
+tags: announcement, newbletter
 ---

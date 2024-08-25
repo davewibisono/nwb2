@@ -6,9 +6,7 @@ subtitle: The Allen Institute for Brain Science announced today the release of
 date: 2019-10-14
 image: /images/news/brain-sciences.png
 author: "Oliver Ruebel"
-tags: 
-    - tag: announcement
-    - tag: newbletter
+tags: announcement, newbletter
 weight: 8
 ---
 some content
