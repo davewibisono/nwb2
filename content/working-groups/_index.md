@@ -19,7 +19,7 @@ sections:
       mice, linking neurophysiological data to the databases and literature that
       characterize the experimental animals. <br><br> <a href=''>[NDX
       Proposal]</a>
-    image: /images/working-groups/genotype.png
+    image: /images/genotype.png
   - title: Spatial coordinates representation
     content: Reporting of spatial coordinates within the brain is a complex problem,
       requiring registration between data collected with multiple recording
@@ -32,7 +32,7 @@ sections:
       will facilitate the programmatic integration and comparison of data
       represented in NWB with other datasets that have been mapped to the same
       coordinate system. <br><br> <a href=''>[NDX Proposal]</a>
-    image: /images/working-groups/spatial.png
+    image: /images/spatial.png
   - title: Behavioral task representation
     content: Behavioral tasks are an increasingly important component in
       neurophysiology experiments, and can have considerably more complex
@@ -47,7 +47,7 @@ sections:
       trials in a session, including tools for visualization, construction, and
       emulation of tasks from these machine-readable descriptions. <br><br> <a
       href=''>[NDX Proposal]</a>
-    image: /images/working-groups/behavioral.png
+    image: /images/behavioral.png
   - title: Spatial coordinates representation
     content: Reporting of spatial coordinates within the brain is a complex problem,
       requiring registration between data collected with multiple recording
@@ -60,7 +60,7 @@ sections:
       will facilitate the programmatic integration and comparison of data
       represented in NWB with other datasets that have been mapped to the same
       coordinate system. <br><br> <a href=''>[NDX Proposal]</a>
-    image: /images/working-groups/spatial.png
+    image: /images/spatial.png
   - title: External Working Groups
     bg_white: true
     content: NWB team members also participate in numerous external working groups.
@@ -68,7 +68,7 @@ sections:
       NWB,  they all involve components that are relevant to NWB and commonly
       use NWB or are creating a Neurodata Extension (NDX) as part of their
       charge.
-    image: /images/working-groups/external-group.png
+    image: /images/external-group.png
   - title: INCF Working Group on standardization of a directory structure containing
       neurophysiology data
     bg_white: true
@@ -83,7 +83,7 @@ sections:
       discuss what experimental metadata is essential, and which formats and
       structures are appropriate for different metadata types. <br><br> <a
       href=''>Working Groups Page</a>
-    image: /images/working-groups/incf-group.png
+    image: /images/incf-group.png
   - title: INCF Electrophysiology Stimulation Ontology Working Group
     bg_white: true
     content: Stimulus protocols are an essential component of neurophysiological
@@ -101,7 +101,7 @@ sections:
       profiles (e.g., long steps, ramps, chirps). This working group will also
       draft recommendations for representation in NWB of parameterized stimuli
       beyond 1-D waveforms. <br><br> <a href=''>Working Groups Page</a>
-    image: /images/working-groups/incf-ontology-group.png
+    image: /images/incf-ontology-group.png
   - title: Standardization of data/file formats for simulation outputs in
       computational neuroscience
     bg_white: true
@@ -116,7 +116,7 @@ sections:
       formats, defining evaluation criteria and evaluating the different
       formats, and identifying avenues for improving interoperability. <br><br>
       <a href=''>Source</a>, <a href=''>NDX</a>
-    image: /images/working-groups/simulation.png
+    image: /images/simulation.png
 past_groups:
   enable: true
   sections:
@@ -131,7 +131,7 @@ past_groups:
         users. Using intracellular electrophysiology as a first use case, the
         working group implemented a hierarchical table structure that
         facilitates grouping of data and metadata by experimental condition."
-      image: /images/working-groups/hierarchical-diagram.png
+      image: /images/hierarchical-diagram.png
   outcomes:
     title: Outcomes
     content: The working group drafted an extension for the NWB schema that

@@ -34,7 +34,7 @@ insight_section:
       content: "Bring a laptop with appropriate software installed. Python should be installed and MATLAB is optional. For instructions on how to install PyNWB, see <a href=''>the PyNWB documentation</a>. For instructions on how to install MatNWB, see <a href=''>the MatNWB documentation</a><br><li>A report of the first NeuroDataReHack event: (<a href=''>PDF</a>)</li><li>Recordings of talks will be made available on the <a href=''>NWB Youtube channel</a>.</li>"
     - title: "What to bring?"
       subtitle: "Tentative schedule:"
-      pdf: "/images/pdf/events/time.pdf"
+      pdf: "/images/time.pdf"
 
 ### Disclaimer
 discalimer: 

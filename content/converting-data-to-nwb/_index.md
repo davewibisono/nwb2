@@ -16,7 +16,7 @@ list:
 available_tools_section:
     enable: true
     boxes: 
-        - icon: "/images/using-nwb/nwb-guide.png"
+        - icon: "/images/nwb-guide.png"
           title: "NWB GUIDE (GUI for Data Entry)"
           type: "Downloadable application"
           features:
@@ -33,7 +33,7 @@ available_tools_section:
             - text: "YouTube Walkthrough"
               link: /
 
-        - icon: "/images/using-nwb/neuroconv.png"
+        - icon: "/images/neuroconv.png"
           title: "NeuroConv"
           type: "Python library (underlies NWB GUIDE)"
           features:
@@ -47,7 +47,7 @@ available_tools_section:
             - text: "Documentation"
               link: /
 
-        - icon: "/images/using-nwb/pynwb.png"
+        - icon: "/images/pynwb.png"
           title: "PyNWB"
           type: "Python library (underlies NeuroConv)"
           features:
@@ -64,7 +64,7 @@ available_tools_section:
             - text: "NWB YouTube Channel"
               link: /
 
-        - icon: "/images/using-nwb/matnwb.png"
+        - icon: "/images/matnwb.png"
           title: "MatNWB"
           type: "MATLAB library"
           features:

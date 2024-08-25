@@ -28,51 +28,51 @@ executive_section:
 current_team_section:
   enable: true
   team_members:
-    - image: /images/team/kris.png
+    - image: /images/kris.png
       name: Kris Bouchard
-    - image: /images/team/bing.png
+    - image: /images/bing.png
       name: Bing Brunton
-    - image: /images/team/elizabeth.png
+    - image: /images/elizabeth.png
       name: Elizabeth Buffalo
-    - image: /images/team/anne.png
+    - image: /images/anne.png
       name: Anne Churchland
-    - image: /images/team/loren.png
+    - image: /images/loren.png
       name: Loren Frank
-    - image: /images/team/satrajit.png
+    - image: /images/satrajit.png
       name: Satrajit Ghost
-    - image: /images/team/Adam.png
+    - image: /images/Adam.png
       name: Adam Kepecs
-    - image: /images/team/mala.png
+    - image: /images/mala.png
       name: Mala Murthy
-    - image: /images/team/kris.png
+    - image: /images/kris.png
       name: Kris Bouchard
-    - image: /images/team/bing.png
+    - image: /images/bing.png
       name: Bing Brunton
 alumni_section:
   enable: true
   alumni:
-    - image: /images/team/floyd.png
+    - image: /images/floyd.png
       name: Floyd Miles
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/courtney.png
+    - image: /images/courtney.png
       name: Courtney Henry
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/annette.png
+    - image: /images/annette.png
       name: Annette Black
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/kathryn.png
+    - image: /images/kathryn.png
       name: Kathryn Murphy
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/darrell.png
+    - image: /images/darrell.png
       name: Darrell Steward
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/jerome.png
+    - image: /images/jerome.png
       name: Jerome Bell
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/esther.png
+    - image: /images/esther.png
       name: Esther Howard
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
-    - image: /images/team/savannah.png
+    - image: /images/savannah.png
       name: Savannah Nguyen
       date: (April 2020 – May 2021, Co-PI 1R24MH116922-01)
 technical_board:
@@ -91,41 +91,41 @@ technical_board:
 technical_team_section:
   enable: true
   team_members:
-    - image: /images/team/alessio.png
+    - image: /images/alessio.png
       name: Alessio Buccino
-    - image: /images/team/saskia.png
+    - image: /images/saskia.png
       name: Saskia de Vries
-    - image: /images/team/yaroslav.png
+    - image: /images/yaroslav.png
       name: Yaroslav Halchenko
-    - image: /images/team/ryan.png
+    - image: /images/ryan.png
       name: Ryan Ly
-    - image: /images/team/lawrence.png
+    - image: /images/lawrence.png
       name: Lawrence Niu
-    - image: /images/team/kushal.png
+    - image: /images/kushal.png
       name: Kushal Bakshi
-    - image: /images/team/anna.png
+    - image: /images/anna.png
       name: Anna (Szonja) Weigl
 core_dev_section:
   pynwb_section:
     enable: true
     team_members:
-      - image: /images/team/oliver.png
+      - image: /images/oliver.png
         name: Oliver Ruebel
         post: Staff Scientist at Berkeley Lab
-      - image: /images/team/ryan.png
+      - image: /images/ryan.png
         name: Ryan Ly
         post: Scientific Data Engineer at Berkeley Lab
-      - image: /images/team/andrew.png
+      - image: /images/andrew.png
         name: Andrew Tritt
         post: Computer Systems Engineer at Berkeley Lab
   matnwb_section:
     enable: true
-    image: /images/team/lawrence.png
+    image: /images/lawrence.png
     name: Lawrence Niu
     post: Principal Engineer at MBF Biosciences
   nwb_community_section:
     enable: true
-    image: /images/team/oliver.png
+    image: /images/oliver.png
     name: Oliver Ruebel
     post: Staff Scientist at Berkeley Lab
 dev_community_section:
