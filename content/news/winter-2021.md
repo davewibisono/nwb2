@@ -6,6 +6,6 @@ subtitle: "The Neurodata Without Borders Winter 2021 Newsletter is now available
 image: "/images/news/winter-2021.png"
 author: "Oliver Ruebel"
 tags: 
-    - announcement
-    - newbletter
+    - tag: announcement
+    - tag: newbletter
 ---

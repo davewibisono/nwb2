@@ -6,6 +6,6 @@ subtitle: "The Neurodata Without Borders: Neurophysiology Winter Newsletter 2019
 image: "/images/news/nwb-newsletter.png"
 author: "Oliver Ruebel"
 tags: 
-    - announcement
-    - newbletter
+    - tag: announcement
+    - tag: newbletter
 ---

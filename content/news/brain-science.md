@@ -7,8 +7,8 @@ date: 2019-10-14
 image: /images/news/brain-sciences.png
 author: "Oliver Ruebel"
 tags: 
-    - announcement
-    - newbletter
+    - tag: announcement
+    - tag: newbletter
 weight: 8
 ---
 some content

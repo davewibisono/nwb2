@@ -6,6 +6,6 @@ subtitle: "Efficient, standardized mechanisms for storing, analyzing, and sharin
 image: "/images/news/neurodata.png"
 author: "Oliver Ruebel"
 tags: 
-    - announcement
-    - newbletter
+    - tag: announcement
+    - tag: newbletter
 ---
