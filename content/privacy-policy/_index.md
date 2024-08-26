@@ -9,7 +9,6 @@ section:
           - heading: Sharing Guidelines
             icon: /images/guidelines.png
             content: Requirements and strategy for sharing format extensions for NWB
-            nested_list: []
           - heading: Sharing Strategies
             icon: /images/strategies.png
             content: Standard practices and strategies for sharing format extensions for NWB

@@ -32,9 +32,11 @@
                         <a href="" class="inter-600 text-16 blue nav-link">{{ . | markdownify }}</a>
                         {{ end }}
                         <div class="{{ with .content }}pt-1{{ end }}">
-                            {{ with .content }}
-                            <p class="inter-400 text-16 dark-700 mb-0 softwareSectA">{{ . | markdownify }}</p>
-                            {{ end }}
+                            <div class="softwareSectA">
+                                {{ with .content }}
+                                <p class="inter-400 text-16 dark-700 mb-0">{{ . | markdownify }}</p>
+                                {{ end }}
+                            </div>
                             {{ range $index, $params := .nested_list }}
                             <div class="d-flex gap-3 ms-1 {{ if eq $index 0 }}pt-4{{ else }}pt-3{{ end }}">
                                 <div>
@@ -42,8 +44,7 @@
                                 </div>
                                 <div>
                                     <a href="" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>
-                                    <p class="inter-400 text-16 dark-700 mb-0 softwareSectA pt-1">{{ .content |
-                                        markdownify }}</p>
+                                    <p class="inter-400 text-16 dark-700 mb-0 softwareSectA pt-1">{{ .content | markdownify }}</p>
                                 </div>
                             </div>
                             {{ end }}
