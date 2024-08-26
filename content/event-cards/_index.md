@@ -13,5 +13,5 @@ intro_section:
     Hackathons is to provide a venue for creators and users of neurophysiology
     open-source software to collaboratively work on NWB-related research
     projects. <br><br> For more information about past and upcoming hackathons,
-    <a href=''>see here</a>
+    <a href=''>see here</a>.
 ---
