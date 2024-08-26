@@ -37,12 +37,12 @@ collections:
         { label: 'Content', name: 'content', widget: 'markdown' }
         ]
         }
-      - { label: 'Start Date', name: 'date', widget: 'datetime' }
-      - { label: 'End Date', name: 'lastDate', widget: 'datetime' }
-      - { label: 'Comments', name: 'comments', widget: 'number' }
-      - { label: 'Time', name: 'time', widget: 'string' }
-      - { label: 'Register Btn', name: 'register_btn', widget: 'string' }
-      - { label: 'Order', name: 'weight', widget: 'number' }
+      - { label: 'Start Date', name: 'date', widget: 'datetime', required: false }
+      - { label: 'End Date', name: 'lastDate', widget: 'datetime', required: false }
+      - { label: 'Comments', name: 'comments', widget: 'number', required: false }
+      - { label: 'Time', name: 'time', widget: 'string', required: false }
+      - { label: 'Register Btn', name: 'register_btn', widget: 'string', required: false }
+      - { label: 'Order', name: 'weight', widget: 'number', required: false }
 
 
   - name: 'publications'
