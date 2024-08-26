@@ -21,6 +21,29 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Categories', name: 'tags', widget: 'string' }
 
+  - name: 'event-cards'
+    label: 'Event Cards'
+    folder: 'content/event-cards'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Intro Section (main page)', name: 'intro_section', required: false, widget: 'object', fields: [
+        { label: 'Enable', name: 'enable', widget: 'boolean', default: true },
+        { label: 'Image', name: 'image', widget: 'image' },
+        { label: 'Title', name: 'title', widget: 'string' },
+        { label: 'Content', name: 'content', widget: 'markdown' }
+        ]
+        }
+      - { label: 'Start Date', name: 'date', widget: 'datetime' }
+      - { label: 'End Date', name: 'lastDate', widget: 'datetime' }
+      - { label: 'Comments', name: 'comments', widget: 'number' }
+      - { label: 'Time', name: 'time', widget: 'string' }
+      - { label: 'Register Btn', name: 'register_btn', widget: 'string' }
+      - { label: 'Order', name: 'weight', widget: 'number' }
+
 
   - name: 'publications'
     label: 'Publications'
