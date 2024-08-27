@@ -19,8 +19,8 @@ collections:
       - { label: 'Content', name: 'body', widget: 'markdown' }
       - { label: 'Order', name: 'weight', widget: 'number' }
       - { label: 'Author Details', name: 'author_details', widget: 'object', fields: [
-          { label: 'Name', name: 'name', widget: 'string' }
-          { label: 'Image', name: 'image', widget: 'image' }
+          { label: 'Name', name: 'name', widget: 'string' },
+          { label: 'Image', name: 'image', widget: 'image' },
           { label: 'Bio', name: 'bio', widget: 'string' }
         ]
         }
