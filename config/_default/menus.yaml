@@ -33,26 +33,22 @@ main:
     parent: Community
   - name: "Events"
     weight: 2
-    url: "events/"
-    parent: Community
-  - name: "Event Cards"
-    weight: 3
     url: "event-cards/"
     parent: Community
   - name: "NWB Enhancement Proposals"
-    weight: 4
+    weight: 3
     url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
     parent: Community
   - name: "Converting Data to NWB"
-    weight: 5
+    weight: 4
     url: "converting-data-to-nwb/"
     parent: Community  
   - name: "Grants and Projects"
-    weight: 6
+    weight: 5
     url: "grants-and-projects/"
     parent: Community
   - name: "Working Groups"
-    weight: 7
+    weight: 6
     url: "working-groups/"
     parent: Community
 
@@ -89,21 +85,18 @@ community:
     url: "/news"
   - name: "Events"
     weight: 2
-    url: "/events"
-  - name: "Event Cards"
-    weight: 4
     url: "/event-cards"
   - name: "NWB Enhancement Proposals"
-    weight: 5
+    weight: 3
     url: "https://github.com/nwb-extensions/nwbep-review/blob/main/README.md"
   - name: "Converting Data to NWB"
-    weight: 6
+    weight: 4
     url: "/converting-data-to-nwb"
   - name: "Grants and Projects"
-    weight: 7
+    weight: 5
     url: "/grants-and-projects"
   - name: "Working Groups"
-    weight: 8
+    weight: 6
     url: "/working-groups"
 
 ### Legal
