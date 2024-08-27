@@ -81,13 +81,16 @@
                     </div>
                 </div>
                 <div class="bg-white p-5 shadow">
-                    {{ with .Params.author }}
+                    {{ with .Params.author_details }}
                     <div class="p-3 bg-slate border">
-                        <div class="d-flex flex-wrap gap-3">
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
                             <div style="width: 100px;">
-                                <img src="/images/placeholder.png" alt="" class="img-fluid">
+                                <img src="{{ .image }}" alt="" class="img-fluid rounded-circle">
                             </div>
-                            <p class="mb-0 blue inter-600 text-20">{{ . }}</p>
+                            <div>
+                                <p class="mb-1 blue inter-600 text-20">{{ .name }}</p>
+                                <p class="mb-0 dark-700 inter-400">{{ .bio }}</p>
+                            </div>
                         </div>
                     </div>
                     {{ end }}

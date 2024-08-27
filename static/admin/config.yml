@@ -18,7 +18,12 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Content', name: 'body', widget: 'markdown' }
       - { label: 'Order', name: 'weight', widget: 'number' }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author Details', name: 'author_details', widget: 'object', fields: [
+          { label: 'Name', name: 'name', widget: 'string' }
+          { label: 'Image', name: 'image', widget: 'image' }
+          { label: 'Bio', name: 'bio', widget: 'string' }
+        ]
+        }
       - { label: 'Categories', name: 'tags', widget: 'string' }
 
   - name: 'event-cards'
@@ -31,10 +36,10 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Section (main page)', name: 'intro_section', required: false, widget: 'object', fields: [
-        { label: 'Display', name: 'enable', widget: 'boolean', default: true },
-        { label: 'Image', name: 'image', widget: 'image' },
-        { label: 'Title', name: 'title', widget: 'string' },
-        { label: 'Content', name: 'content', widget: 'markdown' }
+          { label: 'Display', name: 'enable', widget: 'boolean', default: true },
+          { label: 'Image', name: 'image', widget: 'image' },
+          { label: 'Title', name: 'title', widget: 'string' },
+          { label: 'Content', name: 'content', widget: 'markdown' }
         ]
         }
       - { label: 'Start Date', name: 'date', widget: 'datetime', required: false }
