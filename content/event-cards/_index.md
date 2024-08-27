@@ -1,5 +1,5 @@
 ---
-title: NeuroDataReHack
+title: Events
 intro_section:
   enable: true
   image: /images/hackathons.png
