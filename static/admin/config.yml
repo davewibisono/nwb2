@@ -31,7 +31,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Intro Section (main page)', name: 'intro_section', required: false, widget: 'object', fields: [
-        { label: 'Enable', name: 'enable', widget: 'boolean', default: true },
+        { label: 'Display', name: 'enable', widget: 'boolean', default: true },
         { label: 'Image', name: 'image', widget: 'image' },
         { label: 'Title', name: 'title', widget: 'string' },
         { label: 'Content', name: 'content', widget: 'markdown' }
@@ -612,6 +612,43 @@ collections:
                   - label: "Content"
                     name: "content"
                     widget: "text"
+
+          - label: "Live Chat"
+            name: "live_chat"
+            widget: "object"
+            fields:
+              - label: "Display"
+                name: "enable"
+                widget: "boolean"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "markdown"
+              - label: "Boxes"
+                name: "boxes"
+                widget: "list"
+                fields:
+                  - label: "Icon"
+                    name: "icon"
+                    widget: "image"
+                  - label: "Title"
+                    name: "title"
+                    widget: "string"
+                  - label: "Content"
+                    name: "content"
+                    widget: "string"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+                  - label: "Button"
+                    name: "button"
+                    widget: "object"
+                    fields:
+                      - label: "Display"
+                        name: "enable"
+                        widget: "boolean" 
 
 
       - name: "neurodatarehack"
