@@ -28,7 +28,7 @@ executive_section:
 current_team_section:
   enable: true
   team_members:
-    - image: /images/kris.png
+    - image: /images/img-team-member-career-03.jpg
       name: Kris Bouchard
     - image: /images/bing.png
       name: Bing Brunton
