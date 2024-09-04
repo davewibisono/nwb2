@@ -524,10 +524,6 @@ header {
   .logoWidth {
     width: 75% !important;
   }
-
-  .smallDropdown {
-    background: transparent !important;
-  }
 }
 
 @media (min-width: 992px) {
@@ -535,6 +531,10 @@ header {
     position: static !important;
     background-color: transparent !important;
     width: 75% !important;
+  }
+
+  .smallDropdown {
+    background: transparent !important;
   }
 }
 
