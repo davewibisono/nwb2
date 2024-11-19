@@ -1,10 +1,11 @@
 {{ define "main" }}
 {{/* Hero Section */}}
+{{ $heroImg := "images/essentials/eventsBg.png" | relURL }}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/eventsBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -16,7 +17,7 @@
   <div class="container-lg">
     <div class="row justify-content-center justify-content-md-between gy-5 g-md-0 align-items-center">
       <div class="col-sm-8 col-md-4">
-        <img src="{{ .image }}" alt="" class="img-fluid">
+        <img src="{{ .image | relURL  }}" alt="" class="img-fluid">
       </div>
       <div class="col-sm-8 col-md-7">
         <h3 class="inter-700 text-48 dark-900 mb-4">{{ .title | markdownify }}</h3>
@@ -51,7 +52,7 @@
               <h4 class="inter-600 text-20 mb-0">{{ .Title | markdownify }}</h4>
               <div class="d-flex align-items-center gap-2">
                 <div>
-                  <img src="/images/essentials/calender.png" alt="" width="17">
+                  <img src='{{ "images/essentials/calender.png" | relURL }}' alt="" width="17">
                 </div>
                 <div>
                   <p class="inter-400 text-14 mb-0 pt-1 dark-700">{{ with .Date }}<span>{{ . | time.Format ":date_long"
@@ -62,7 +63,7 @@
               <div class="d-flex">
                 <div class="d-flex align-items-center gap-2 me-4">
                   <div>
-                    <img src="/images/essentials/clock.png" alt="" width="17">
+                    <img src='{{ "images/essentials/clock.png" | relURL }}' alt="" width="17">
                   </div>
                   {{ with .Params.time }}
                   <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
@@ -71,7 +72,7 @@
                 {{ with .Params.comments }}
                 <div class="d-flex align-items-center gap-2">
                   <div>
-                    <img src="/images/essentials/comments.png" alt="" width="17">
+                    <img src='{{ "images/essentials/comments.png" | relURL }}' alt="" width="17">
                   </div>
                   <p class="inter-400 text-14 mb-0 pt-1 blue">{{ . }}</p>
                 </div>
@@ -118,12 +119,12 @@
       <div class="rounded-3 p-3 bg-darkes">
         <div class="d-flex gap-3 flex-column flex-sm-row align-items-start align-items-md-center">
           <div class="p-3 rounded-3">
-            <img src="/images/calander.png" alt="" width="20" height="20">
+            <img src='{{ "images/calander.png" | relURL }}' alt="" width="20" height="20">
           </div>
           <div class="row gy-2">
             <a href="{{ .Permalink }}" class="nav-link inter-600 text-20 dark-900 mb-0">{{ .Title | markdownify }}</a>
             <p class="d-flex align-items-center gap-2 mb-0 px-0">
-              <img src="/images/schedule.png" alt="" width="14">
+              <img src='{{ "images/schedule.png" | relURL }}' alt="" width="14">
               <span class="inter-400 text-14 dark-500">{{ .Date | time.Format ":date_long" }} - {{ .Params.lastDate | time.Format ":date_long" }}</span>
             </p>
           </div>

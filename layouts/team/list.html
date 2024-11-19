@@ -1,9 +1,10 @@
 {{ define "main" }}
 {{/* Hero Section */}}
-<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/teamBg.png');">
+{{ $heroImg := "images/essentials/teamBg.png" | relURL }}
+<section class="hero teamSect d-flex justify-content-center align-items-center position-relative" style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -49,7 +50,7 @@
         {{ range $index, $element := .team_members }}
         <div class="col-6 col-sm-4 col-md-3 team-member {{ if gt $index 7 }}d-none{{ end }}" data-index="{{ $index }}">
           <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-3">
-            <img src="{{ $element.image }}" alt="" class="img-fluid rounded-3">
+            <img src="{{ $element.image | relURL }}" alt="" class="img-fluid rounded-3">
             <h5 class="inter-700 text-20 dark-900 pt-4">{{ $element.name | markdownify }}</h5>
           </div>
         </div>
@@ -59,11 +60,11 @@
       <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2 mt-5">
         <a href="javascript:void(0);" id="show-more" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16">
           <span>Show More</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+          <img src='{{ "images/essentials/d-down-arrow.png" | relURL }}' alt="" width="20" height="20">
         </a>
         <a href="javascript:void(0);" id="show-less" class="btn btn-lg border shadow-sm bg-white dark-900 inter-500 text-16 d-none">
           <span>Show Less</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+          <img src='{{ "images/essentials/d-down-arrow.png" | relURL }}' alt="" width="20" height="20" class="rotatedIcon">
         </a>
       </div>
       {{ end }}
@@ -83,7 +84,7 @@
             {{ range .alumni }}
             <div class="col-6 col-sm-3">
                 <div class="h-100 bg-white rounded-3 p-md-4 p-2 shadow-sm pb-md-2">
-                    <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                    <img src="{{ .image | relURL }}" alt="" class="img-fluid rounded-3">
                     <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name }}</h5>
                     <p class="inter-400 text-14 dark-900">{{ .date }}</p>
                 </div>
@@ -124,7 +125,7 @@
         {{ range $i, $p := .team_members }}
         <div class="col-12 col-sm-4 col-md-3 team-member-tech {{ if gt $i 7 }}d-none{{ end }}" data-index="{{ $i }}">
           <div class="h-100 bg-white rounded-3 p-2 p-md-4 shadow-sm pb-md-3">
-            <img src="{{ $p.image }}" alt="" class="img-fluid rounded-3">
+            <img src="{{ $p.image | relURL }}" alt="" class="img-fluid rounded-3">
             <h5 class="inter-700 text-20 dark-900 pt-4">{{ $p.name | markdownify }}</h5>
           </div>
         </div>
@@ -134,11 +135,11 @@
       <div class="d-flex justify-content-center align-items-center pt-4 flex-column flex-sm-row gap-2">
         <a href="javascript:void(0);" id="show-more-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16">
           <span>Show More</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20">
+          <img src='{{ "images/essentials/d-down-arrow.png" | relURL }}' alt="" width="20" height="20">
         </a>
         <a href="javascript:void(0);" id="show-less-tech" class="btn btn-lg shadow-sm bg-white dark-900 inter-500 text-16 d-none">
           <span>Show Less</span>
-          <img src="/images/essentials/d-down-arrow.png" alt="" width="20" height="20" class="rotatedIcon">
+          <img src='{{ "images/essentials/d-down-arrow.png" | relURL }}' alt="" width="20" height="20" class="rotatedIcon">
         </a>
       </div>
       {{ end }}
@@ -164,7 +165,7 @@
                 <div class="col-sm-6 col-md-4">
                     <div class="h-100 bg-white rounded-3 p-4 shadow-sm pb-2 d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column justify-content-center align-items-center">
-                            <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ .image | relURL }}" alt="" class="img-fluid rounded-3">
                         </div>
                         <div>
                           <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
@@ -187,7 +188,7 @@
                 <div class="col-sm-6 col-md-4">
                     <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">MatNWB</h3>
                     <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
-                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        <img src="{{ .image | relURL }}" alt="" class="img-fluid rounded-3">
                         <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
                         <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
                     </div>
@@ -200,7 +201,7 @@
                 <div class="col-sm-6 col-md-4 pt-5 pt-sm-0">
                     <h3 class="inter-600 dark-900 text-36 pb-4 titleHeight">NWB Community Liaison</h3>
                     <div class="bg-white rounded-3 p-4 shadow-sm boxHeight">
-                        <img src="{{ .image }}" alt="" class="img-fluid rounded-3">
+                        <img src="{{ .image | relURL }}" alt="" class="img-fluid rounded-3">
                         <h5 class="inter-700 text-20 dark-900 pt-4">{{ .name | markdownify }}</h5>
                         <p class="inter-400 text-14 dark-900">{{ .post | markdownify }}</p>
                     </div>

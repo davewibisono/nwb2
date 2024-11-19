@@ -5,7 +5,7 @@ style="background:linear-gradient(to right, #1f4e75, #152f45);">
 <div class="container-xl justify-content-between pt-5 mx-md-0 z-1">
   <div class="row justify-content-md-between align-items-center gx-xl-5">
     <div class="col-md-4 px-md-0">
-      <img src="{{ .Params.hero_image }}" alt="" class="img-fluid">
+      <img src="{{ .Params.hero_image | relURL }}" alt="" class="img-fluid">
     </div>
     <div class="col-md-6 px-md-0 pt-4 pt-md-0">
       <div class="d-flex flex-column row-gap-3">
@@ -16,14 +16,14 @@ style="background:linear-gradient(to right, #1f4e75, #152f45);">
     </div>
   </div>
   <div class="position-absolute eventsEllipses">
-    <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+    <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
   </div>
 </div>
 <div class="position-absolute end-0 bottom-0">
-  <img src="/images/essentials/eventsHero.png" alt="" width="300">
+  <img src='{{ "images/essentials/eventsHero.png" | relURL }}' alt="" width="300">
 </div>
 <div class="position-absolute start-0">
-  <img src="/images/essentials/eventsHeroL.png" alt="" class="opacity-25">
+  <img src='{{ "images/essentials/eventsHeroL.png" | relURL }}' alt="" class="opacity-25">
 </div>
 </section>
 {{/* End Hero Section */}}

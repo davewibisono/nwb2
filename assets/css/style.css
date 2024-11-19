@@ -574,22 +574,6 @@ header {
   font-size: 48px !important;
 }
 
-.swiper-button-prev::after {
-  content: url(/images/essentials/swipe_left.png);
-  background-color: #F0F8FF;
-  padding: 15px;
-  border-radius: 50%;
-  line-height: 0;
-}
-
-.swiper-button-next::after {
-  content: url(/images/essentials/swipe_right.png);
-  background-color: #F0F8FF;
-  padding: 15px;
-  line-height: 0;
-  border-radius: 50%;
-}
-
 .heroSwiper 
 .swiper-pagination {
   bottom: 20px !important;

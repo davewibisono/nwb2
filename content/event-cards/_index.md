@@ -2,7 +2,7 @@
 title: Events
 intro_section:
   enable: true
-  image: /images/hackathons.png
+  image: images/hackathons.png
   title: NWB Hackathons
   content: The NWB Hackathons are hands-on activities lasting several days in
     which neurophysiology researchers and software developers create solutions

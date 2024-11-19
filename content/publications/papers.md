@@ -1,7 +1,7 @@
 ---
 title: "Papers"
 weight: 3
-icon: "/images/paper.png"
+icon: "images/paper.png"
 list:
     - content: "Oliver Rübel, Andrew Tritt, Ryan Ly, Benjamin K. Dichter, Satrajit Ghosh, Lawrence Niu, Pamela Baker, Ivan Soltesz, Lydia Ng, Karel Svoboda, Loren Frank, Kristofer E. Bouchard,  The Neurodata Without Borders ecosystem for neurophysiological data science, Oct. 2022,  eLife 11:e78362. https://doi.org/10.7554/eLife.78362  (bioRxiv preprint: https://doi.org/10.1101/2021.03.13.435173)"
     - content: "D. Eke, A. Bernard, J. G. Bjaalie, R. Chavarriaga, T. Hanakawa, A. Hannan, S. Hill, M. E. Martone, A. McMahon, O. Rübel, E. Thiels, and F. Pestilli, “International Data Governance for Neuroscience,” Neuron, Dec. 2021, ISSN 0896-6273,  doi: https://doi.org/10.1016/j.neuron.2021.11.017  (PsyArXiv Preprint: doi: https://doi.org/10.31234/osf.io/esz9b"

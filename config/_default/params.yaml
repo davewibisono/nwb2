@@ -1,10 +1,10 @@
 # Header
-logo: "/images/logo.png"
+logo: "images/logo.png"
 cta:
   enable: true
   text: "Get Started"
   link: /
 
 # Footer
-footer_logo: "/images/colored-logo.png"
+footer_logo: "images/colored-logo.png"
 copyright_text: "© Neurodata Without Borders - All Rights Reserved"

@@ -1,10 +1,11 @@
 {{ define "main" }}
 {{/* Hero Section */}}
+{{ $heroImg := "images/essentials/publicationsBg.png" | relURL }}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/publicationsBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -24,7 +25,7 @@
                         class='bg-white rounded-3 shadow-sm px-3 py-2 d-flex align-items-center gap-2 nav-link sideLink'>
                         {{ with .Params.icon }}
                         <div class="">
-                            <img src="{{ . }}" alt="" width="20"
+                            <img src="{{ . | relURL }}" alt="" width="20"
                                 class="filter-icon animate">
                         </div>
                         {{ end }}
@@ -50,7 +51,7 @@
                                 <div class="border-dark-50 border rounded-3 p-3 h-100">
                                     {{ with .icon }}
                                     <div class="rounded-3 bg-slate p-3 d-inline-block mb-3">
-                                        <img src="{{ . }}" alt="" width="24">
+                                        <img src="{{ . | relURL }}" alt="" width="24">
                                     </div>
                                     {{ end }}
                                     <h4 class="inter-600 text-18 dark-700 mb-0">{{ .title | markdownify }}</h4>
@@ -74,7 +75,7 @@
                                 {{ range .Params.list }}
                                 <div class="d-flex gap-3 text-break">
                                     <div>
-                                        <img src="/images/marker.png" alt="" width="16">
+                                        <img src='{{ "images/marker.png" | relURL }}' alt="" width="16">
                                     </div>
                                     <div>
                                         <p class="inter-400 text-16 dark-700 mb-0">{{ .content | markdownify }}</p>
@@ -93,7 +94,7 @@
                                 </div>
                                 {{ with .image }}
                                 <div class="ms-4 mb-3">
-                                    <img src="{{ . }}" alt="" class="listImg">
+                                    <img src="{{ . | relURL }}" alt="" class="listImg">
                                 </div>
                                 {{ end }}
                                 {{ end }}
@@ -102,7 +103,7 @@
                         </div>
                         {{ with .Params.main_image }}
                         <div class="col-md-5 mb-4 mb-md-0">
-                            <img src="{{ . }}" alt="" class="img-fluid rounded-3">
+                            <img src="{{ . | relURL }}" alt="" class="img-fluid rounded-3">
                         </div>
                         {{ end }}
                     </div>

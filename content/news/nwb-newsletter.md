@@ -2,11 +2,11 @@
 title: NWB Newsletter Summer 2022
 subtitle: The Neurodata Without Borders Summer 2022 Newsletter is now available!
 date: 2022-08-30
-image: /images/nwb-newsletter.png
+image: images/nwb-newsletter.png
 weight: 1
 author_details:
   name: Oliver Ruebel
-  image: /images/placeholder.png
+  image: images/placeholder.png
   bio: Author's bio goes here
 tags: announcement, newsletter
 ---

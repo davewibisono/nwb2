@@ -2,7 +2,7 @@
 title: About Us
 about_section:
   enable: true
-  image: /images/about-nwb.png
+  image: images/about-nwb.png
   title: About NWB
   content: Progress in modern science is enabled by data sharing. Thereare major
     obstacles, however, that limit the open exchange of data particularly in
@@ -13,7 +13,7 @@ about_section:
     down theobstacles to data sharing.
 overview_section:
   enable: true
-  image: /images/overview.png
+  image: images/overview.png
   title: Overview
   content: The aim of Neurodata Without Borders is to standardize neuroscience
     data on an international scale. Our goal is to break down the geographic,
@@ -49,7 +49,7 @@ neurophysiology_section:
         software for data standardization and application programming interfaces
         (APIs) for reading and writing the data as well as high-value data sets
         that have been translated into the NWB data standard.
-    - image: /images/Neurophysiology-min.png
+    - image: images/Neurophysiology-min.png
     - text: Neurodata Without Borders is intended to serve the broad neuroscience
         community and encourage the sharing of data by scientists worldwide. NWB
         2.0 was released in February 2019. Please give it a try. Join our
@@ -61,27 +61,27 @@ nwb_goals_section:
   title: "Technical Design Goals of the NWB: N Format"
   boxes:
     - title: Compatible
-      icon: /images/compete.png
+      icon: images/compete.png
       checks:
         - check: Cross-platform
         - check: Support for tool makers
     - title: Usable
-      icon: /images/click.png
+      icon: images/click.png
       checks:
         - check: Quickly develop a basic understanding of an experiment and its
         - check: Review an experiment’s details without programming knowledge
     - title: Comprehensive
-      icon: /images/neurone.png
+      icon: images/neurone.png
       checks:
         - check: Accommodate an experiment’s raw and processed data
         - check: Encapsulate all of an experiment’s data, or link to external data sources
             when necessary
     - title: Preservable
-      icon: /images/goal.png
+      icon: images/goal.png
       checks:
         - check: Data published in the format should be accessible for decades
     - title: Extensible
-      icon: /images/puzzle.png
+      icon: images/puzzle.png
       checks:
         - check: Accommodate future experimental paradigms without sacrificing backwards
             compatibility
@@ -126,5 +126,5 @@ history_section:
         sets of data published in NWB. E.g, the AIBS has adopted the use of this
         format and to date has released numerous NWB:N files assaying mouse
         visual cortex.
-    - wide_image: /images/history.png
+    - wide_image: images/history.png
 ---

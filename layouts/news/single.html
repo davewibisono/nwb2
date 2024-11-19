@@ -1,12 +1,13 @@
 {{ define "main" }}
 {{/* Hero Section */}}
+{{ $heroImg := "images/essentials/newsPageBg.png" | relURL }}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/newsPageBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     {{ with .Parent.Title }}
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ . | markdownify }}</h1>
     {{ end }}
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -31,26 +32,26 @@
         <div class="row justify-content-between">
             <div class="col-lg-8">
                 <div>
-                    <img src="{{ .Params.image }}" alt="" class="rounded-top-3"
+                    <img src="{{ .Params.image | relURL }}" alt="" class="rounded-top-3"
                         style="width: 100% !important; height: 240px !important; object-fit: cover !important;">
                 </div>
                 <div class="mt-4 bg-white px-5 py-2">
                     <div class="d-flex flex-column flex-sm-row gap-3">
                         <div class="d-flex gap-2 align-items-center">
                             {{ with .Date }}
-                            <img src="/images/events/schedule.png" alt="" width="14">
+                            <img src='{{ "images/events/schedule.png" | relURL }}' alt="" width="14">
                             <span class="inter-400 text-14 dark-500">{{ . | time.Format ":date_long" }}</span>
                             {{ end }}
                         </div>
                         <div>
                             {{ with .Params.author }}
-                            <img src="/images/user-dark.svg" alt="" width="14">
+                            <img src='{{ "images/user-dark.svg" | relURL }}' alt="" width="14">
                             <span class="inter-400 text-14 dark-500">{{ . }}</span>
                             {{ end }}
                         </div>
                         <div>
                             {{ with .Params.tags }}
-                            <img src="/images/folder.svg" alt="" width="14">
+                            <img src='{{ "images/folder.svg" | relURL }}' alt="" width="14">
                             <span class="inter-400 text-14 dark-500">
                                 {{ . }}
                             </span>
@@ -96,7 +97,7 @@
                     <div class="p-3 bg-slate border">
                         <div class="d-flex flex-wrap gap-3 align-items-center">
                             <div style="width: 100px;">
-                                <img src="{{ .image }}" alt="" class="img-fluid rounded-circle">
+                                <img src="{{ .image | relURL }}" alt="" class="img-fluid rounded-circle">
                             </div>
                             <div>
                                 <p class="mb-1 blue inter-600 text-20">{{ .name }}</p>
@@ -133,13 +134,13 @@
                         <div class="rounded-3 shadow-sm bg-white p-2">
                             <div class="d-flex  gap-3 align-items-center">
                                 <div>
-                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image }}" alt="" width="90"
+                                    <img data-pagefind-meta="image[src]" src="{{ .Params.image | relURL }}" alt="" width="90"
                                         height="70" class="rounded-3">
                                 </div>
                                 <div class="w-100 d-flex flex-column row-gap-1">
                                     <div class="d-flex align-items-sm-center gap-1">
                                         <div>
-                                            <img src="/images/essentials/calender.png" alt="calender" width="17">
+                                            <img src='{{ "images/essentials/calender.png" | relURL }}' alt="calender" width="17">
                                         </div>
                                         <p class="inter-400 text-12 dark-600 mb-0 pt-1" data-pagefind-meta="date">{{
                                             .Date | time.Format "January 02, 2006 "}}</p>
@@ -153,7 +154,7 @@
                                         <a href="{{ .Permalink }}"
                                             class="btn btn-outline-primary border-0 bg-transparent blue animate scale p-0">
                                             Read More
-                                            <img src="/images/essentials/right_arrow.png" alt="" width="15"
+                                            <img src='{{ "images/essentials/right_arrow.png" | relURL }}' alt="" width="15"
                                                 class="ms-2">
                                         </a>
                                     </div>
@@ -170,7 +171,7 @@
                         <div class="rounded-3 bg-white shadow-sm p-3">
                             <div class="d-flex align-items-start gap-3">
                                 <div>
-                                    <img src="/images/essentials/bookmark_star.png" alt="" width="15">
+                                    <img src='{{ "images/essentials/bookmark_star.png" | relURL }}' alt="" width="15">
                                 </div>
                                 <div>
                                     <h4 class="inter-600 text-14 dark-900 mb-1 mt-1">August 2022</h4>

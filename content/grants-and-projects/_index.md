@@ -15,7 +15,7 @@ sponsered_projects:
         support, and coverage of new technologies and 2) neuroscience tools and
         technologies by maintaining core NWB technologies and integrating with a
         wide array of powerful data tools and technologies.
-      image: /images/advanced-nd.png
+      image: images/advanced-nd.png
 intro_section:
   enable: true
   title: Kavli Sponsored Projects
@@ -181,7 +181,7 @@ sponsers:
 past_projects_section:
   enable: true
   projects:
-    - image: /images/nwbn.png
+    - image: images/nwbn.png
       title: "NWB:N: A Data Standard and Software Ecosystem for Neurophysiology"
       content: The National Institutes of Health, through project <a
         href=''>1R24MH116922</a>, funded <a href=''>Oliver Rübel</a> (Lawrence
@@ -192,14 +192,14 @@ past_projects_section:
         reproducibility. This funding is part of the NIH’s BRAIN Initiative
         support to develop standards.(September 2018-May 2020). For updates on
         this project see our Progress Reports page.
-    - image: /images/shared-analysis.png
+    - image: images/shared-analysis.png
       title: Enabling Shared Analysis and Processing of Large Neurophysiology Data
       content: The National Institutes of Health, through project 1R44MH115731, funded
         William Schroeder (Kitware, Inc.) to create software tools to browse,
         process, analyze, and visualize NWB data. This funding is part of the
         NIH’s BRAIN Initiative Small Business Innovation Research (SBIR) grant
         program. (July 2017-June 2020).
-    - image: /images/computing-project.png
+    - image: images/computing-project.png
       title: High Performance Computing Project at the Lawerence Berkeley National
         Laboratory
       content: The Kavli Foundation provided support (2016-2018) to Kristofer Bouchard
@@ -216,10 +216,10 @@ boxes:
         Rübel at the Lawrence Berkeley National Lab to support community
         engagement, outreach and software development. This program is currently
         supporting Benjamin Dichter as a community liaison for NWB:N.
-      image: /images/community-liason.png
+      image: images/community-liason.png
     - title: Simons Foundation Sponsors Development of MatNWB
       content: The Simons Foundation funds projects (Aug.2017 – present) to develop
         and expand the NWB2.0 Matlab API MatNWB to allow for adoption by a
         larger portion of the neuroscience community.
-      image: /images/simons-foundation.png
+      image: images/simons-foundation.png
 ---

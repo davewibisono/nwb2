@@ -1,10 +1,11 @@
 {{ define "main" }}
 {{/* Hero Section */}}
+{{ $heroImg := "images/essentials/policiesBg.png" | relURL }}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/policiesBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     <h1 class="inter-700 text-48 text-white text-center z-4">{{ .Title | markdownify }}</h1>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -25,7 +26,7 @@
                 {{ range $i, $p := .items }}
                 <div class="d-flex gap-3 ms-1 {{ if eq $i 0 }}pt-4{{ else }}pt-3{{ end }}">
                     <div>
-                        <img src="{{ .icon }}" alt="" width="20">
+                        <img src="{{ .icon | relURL }}" alt="" width="20">
                     </div>
                     <div>
                         {{ with .heading }}
@@ -40,7 +41,7 @@
                             {{ range $index, $params := .nested_list }}
                             <div class="d-flex gap-3 ms-1 {{ if eq $index 0 }}pt-4{{ else }}pt-3{{ end }}">
                                 <div>
-                                    <img src="{{ .icon }}" alt="" width="20">
+                                    <img src="{{ .icon | relURL }}" alt="" width="20">
                                 </div>
                                 <div>
                                     <a href="" class="inter-600 text-16 blue nav-link">{{ .heading | markdownify }}</a>

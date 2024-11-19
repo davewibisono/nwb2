@@ -1,6 +1,6 @@
 ---
 title: "Project Reports"
-icon: "/images/report.png"
+icon: "images/report.png"
 list: 
     - content: "Benjamin Dichter, Oliver R ̈ubel, Ryan Ly, Satrajit Ghosh, Jerome Lecoq, Saskia de Vries, Carly Kiselycznyk, Kaitlyn Casimo, and Stephanie Albin, “Report: Neurodata Rehack: Generating new insights from existing neurophysiology data through secondary analysis: October 3-5, 2022” Online Technical Report, January 2023, <br><br> <a href=''>(PDF) (LaTeX)</a>"
     - content: "Oliver Rübel, Benjamin Dichter, Ryan Ly , “Report: 2022 NWB Users Days at HHMI Janelia 13th NWB Hackathon: July 25 – 27, 2022,” Online Technical Report, August 2022 <br><br> <a href=''>(PDF) (LaTeX)</a>"

@@ -10,22 +10,22 @@ software_types:
     component we provide an overview of the problem, its function, and a
     description.
   boxes:
-    - icon: /images/code.png
+    - icon: images/code.png
       title: Specification Language
       content: How to formally define neuroscience data standards?
-    - icon: /images/api.png
+    - icon: images/api.png
       title: Data API(s)
       content: How to efficiently interact with (read, write, query, analyze...)
         neuroscience data?
-    - icon: /images/database.png
+    - icon: images/database.png
       title: Data Storage
       content: How to store large collections of neuroscience data?
-    - icon: /images/schema.png
+    - icon: images/schema.png
       title: Data Standard Schema
       content: How to organize complex collections of neuroscience data?
 sections:
   - title: Specification Language
-    image: /images/specsImg.png
+    image: images/specsImg.png
     problem: Definition of neuroscience data standards.
     approach: To support the formal and verifiable specification of neurodata file
       formats,<br> NWB:N relies on the NWB:N specification language.
@@ -39,7 +39,7 @@ sections:
       managed by the format <br> <a href='/'>Specification Language
       Documentation</a>
   - title: Data API(s)
-    image: /images/apiBox.png
+    image: images/apiBox.png
     problem: Efficient interaction with neuroscience data.
     approach: Develop APIs that provide easy-to-use representations of NWB:N
       neurodata types for programmatic use and enable the mapping of these
@@ -65,7 +65,7 @@ sections:
       NWB. See our Analysis and Visualization Tools page for a list of tools
       that support NWB.
   - title: Data Storage
-    image: /images/storageImg.png
+    image: images/storageImg.png
     problem: Storage of large collections of neuroscience data.
     approach: The NWB:N format currently uses the <a href=''> Hierarchical Data
       Format (HDF5)</a> as primary storage mechanism.
@@ -89,7 +89,7 @@ sections:
       ongoing accessibility of HDF-stored data. <br><br> <a href=''>Data Storage
       Documentation</a>
   - title: Data Standard Schema
-    image: /images/schemaImg.png
+    image: images/schemaImg.png
     problem: Organization of complex collections of neuroscience data.
     approach: Organize data hierarchically using easy-to-use primitives, e.g.,
       Groups (similar to Folders), Datasets (n-D Arrays), Attributes (Metadata
@@ -112,12 +112,12 @@ community_tools:
   content: Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
     libero et velit interdum, ac aliquet odio mattis.
   tools:
-    - image: /images/neuropy.png
+    - image: images/neuropy.png
       title: NeuroPy
-    - image: /images/datavis.png
+    - image: images/datavis.png
       title: DataVis
-    - image: /images/spikesort.png
+    - image: images/spikesort.png
       title: SpikeSort
-    - image: /images/neurograph.png
+    - image: images/neurograph.png
       title: NeuroGraph
 ---

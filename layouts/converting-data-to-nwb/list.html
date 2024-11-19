@@ -1,12 +1,13 @@
 {{ define "main" }}
 {{/* Hero Section */}}
+{{ $heroImg := "images/essentials/usingnwbBg.png" | relURL }}
 <section class="hero teamSect d-flex justify-content-center align-items-center position-relative"
-    style="background: radial-gradient(#063053e5, #062e52e5), url('/images/essentials/usingnwbBg.png');">
+    style="background: radial-gradient(#063053e5, #062e52e5), url('{{ $heroImg }}');">
     <div class="container-lg">
         <h1 class="inter-700 text-48 text-white z-4">{{ .Title | markdownify }}</h1>
     </div>
     <div class="position-absolute ellipses">
-        <img src="/images/essentials/ellipses.png" alt="" class="ellipseW">
+        <img src='{{ "images/essentials/ellipses.png" | relURL }}' alt="" class="ellipseW">
     </div>
 </section>
 {{/* End Hero Section */}}
@@ -46,7 +47,7 @@
                 <div class="d-flex flex-column row-gap-4">
                     <div class="d-flex align-items-center gap-4">
                         {{ with .icon }}
-                        <img src="{{ . }}" alt="" width="60">
+                        <img src="{{ . | relURL }}" alt="" width="60">
                         {{ end }}
                         {{ with .title }}
                         <h3 class="inter-700 text-28 dark-900 mb-0 mt-2">{{ . | markdownify }}</h3>
